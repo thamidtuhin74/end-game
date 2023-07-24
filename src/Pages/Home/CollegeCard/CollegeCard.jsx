@@ -6,7 +6,7 @@ const CollegeCard = () => {
   console.log(myCollege);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/collagesRoutes`)
+    fetch(`https://campus-reserved-server-main.vercel.app/collagesRoutes`)
       .then((res) => res.json())
       .then((data) => {
         setMyCollege(data);

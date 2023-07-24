@@ -13,7 +13,7 @@ const MyCollege = () => {
   //   const { user } = useAuth();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/my-college`)
+    fetch(`https://campus-reserved-server-main.vercel.app/my-college`)
       .then((res) => res.json())
       .then((data) => {
         setMyCollege(data);
@@ -25,7 +25,7 @@ const MyCollege = () => {
     const fetchCollegeDetails = async () => {
       const collegeDetailsPromises = myCollege.map((college) =>
         fetch(
-          `http://localhost:5000/my-college-details/${college.collegeId}`
+          `https://campus-reserved-server-main.vercel.app/my-college-details/${college.collegeId}`
         ).then((res) => res.json())
       );
 
@@ -38,7 +38,7 @@ const MyCollege = () => {
   }, [myCollege]);
 
   //   useEffect(() => {
-  //     fetch(`http://localhost:5000/my-college-details/${myCollege.collegeId}`)
+  //     fetch(`https://campus-reserved-server-main.vercel.app/my-college-details/${myCollege.collegeId}`)
   //       .then((res) => res.json())
   //       .then((data) => {
   //         setCollegeData(data);

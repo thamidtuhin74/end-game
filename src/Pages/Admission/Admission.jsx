@@ -6,7 +6,7 @@ const Admission = () => {
   console.log(collegesName);
 
   useEffect(() => {
-    fetch("http://localhost:5000/collegeName")
+    fetch("https://campus-reserved-server-main.vercel.app/collegeName")
       .then((res) => res.json())
       .then((data) => {
         setCollegesName(data);

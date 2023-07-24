@@ -21,7 +21,7 @@ const EditeProfile = () => {
     };
     console.log(updateProfile);
 
-    fetch(`http://localhost:5000/users/${id}`, {
+    fetch(`https://campus-reserved-server-main.vercel.app/users/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

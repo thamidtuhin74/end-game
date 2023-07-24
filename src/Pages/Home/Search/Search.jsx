@@ -10,7 +10,7 @@ const Search = () => {
   console.log(myCollege);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/collagesRoutes`)
+    fetch(`https://campus-reserved-server-main.vercel.app/collagesRoutes`)
       .then((res) => res.json())
       .then((data) => {
         setMyCollege(data);
@@ -24,7 +24,7 @@ const Search = () => {
   useEffect(() => {
     // Fetch search results only if the searchCollege has a value
     if (searchCollege.trim() !== "") {
-      fetch(`http://localhost:5000/search-colleges?q=${searchCollege}`)
+      fetch(`https://campus-reserved-server-main.vercel.app/search-colleges?q=${searchCollege}`)
         .then((res) => res.json())
         .then((data) => {
           setMyCollege(data);

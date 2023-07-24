@@ -8,7 +8,7 @@ const Profile = () => {
   console.log(profileUsers?._id);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user?.email}`)
+    fetch(`https://campus-reserved-server-main.vercel.app/users/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         setProfileUsers(data);

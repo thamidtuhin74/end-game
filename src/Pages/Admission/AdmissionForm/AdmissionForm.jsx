@@ -25,7 +25,7 @@ const AdmissionForm = () => {
       collegeId: id,
     };
 
-    fetch("http://localhost:5000/add-admission", {
+    fetch("https://campus-reserved-server-main.vercel.app/add-admission", {
       method: "POST",
       headers: {
         "content-type": "application/json",

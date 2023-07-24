@@ -9,7 +9,7 @@ const CollegeDetails = () => {
   //   console.log(singleData);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/collegeDetails/${id}`)
+    fetch(`https://campus-reserved-server-main.vercel.app/collegeDetails/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setSingleData(data);
